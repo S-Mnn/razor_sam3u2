@@ -92,6 +92,15 @@ Promises:
 */
 void UserApp1Initialize(void)
 {
+  LedOff(CYAN);
+  LedOff(GREEN);
+  LedOff(YELLOW);
+  LedOff(ORANGE);
+  
+  LedOn(BLUE);
+  LedOn(PURPLE);
+  LedBlink(RED, LED_2HZ);
+  LedPWM(WHITE, LED_PWM_5);
   /* If good initialization, set state to Idle */
   if( 1 )
   {
